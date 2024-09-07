@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>expense tracker</title>
+</head>
+
+<body>
+
+  <label for="filter">Filter</label>
+  <select name="type" id="filter">
+    <option value="0">All</option>
+    <option value="Bus1">Bus1</option>
+    <option value="Bus2">Bus2</option>
+    <option value="Bus3">Bus3</option>
+  </select>
+  <form onsubmit="handleFormSubmit(event)">
+    <label for="username"> Name</label>
+    <input type="text" name="username" id="username" />
+
+  </br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" />
+  </br>
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone">
+  </br>
+    <label for="type">car number</label>
+    <select name="type" id="type">
+
+      <option value="">Bus1</option>
+      <option value="">Bus2</option>
+      <option value="">Bus3</option>
+    </select>
+
+    <button type="submit">Book</button>
+
+  </form>
+
+  <ul id="expense">
+  </ul>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+
+<script src="busbooking.js"></script>
+
+</html>
