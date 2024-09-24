@@ -1,5 +1,13 @@
 document.getElementById("filter").addEventListener("change", function () {
   const selectedValue = this.value;
+  // <label for="filter">Filter</label>
+  // <select name="type" id="filter">
+  //   <option value="0">All</option>
+  //   <option value="Bus1">Bus1</option>
+  //   <option value="Bus2">Bus2</option>
+  //   <option value="Bus3">Bus3</option>
+  // </select>
+  //this this.value passed 0 ,bus1 or so on to selectedvalue  ,next we will implement show and hide by for loop
   console.log("Selected option value:", selectedValue);
   
   // Get all li items with class "bookings"
