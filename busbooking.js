@@ -84,6 +84,10 @@ function handleFormSubmit(event) {
   //stored value in category
   let etype =
     selectElement.options[selectElement.options.selectedIndex].textContent;
+    //  here this will store bus1 ,bus2 or bus3 or in etype from below html code in html file
+    // <option value="Bus1">Bus1</option>
+    // <option value="Bus2">Bus2</option>
+    // <option value="Bus3">Bus3</option>
   const userDetails = {
     username: event.target.username.value,
     email: event.target.email.value,
